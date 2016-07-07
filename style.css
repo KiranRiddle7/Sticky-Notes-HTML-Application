@@ -28,12 +28,12 @@ ul li a{
   height:10em;
   width:10em;
   padding:1em;
-  /* Firefox */
   -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
-  /* Safari+Chrome */
   -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  /* Opera */
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
    
 }
 ul li{
@@ -46,6 +46,7 @@ ul li:nth-child(even) a{
   -moz-transform:rotate(4deg);
   position:relative;
   top:5px;
+  background:#ccc;
 }
 ul li:nth-child(3n) a{
   -o-transform:rotate(-3deg);
@@ -53,6 +54,7 @@ ul li:nth-child(3n) a{
   -moz-transform:rotate(-3deg);
   position:relative;
   top:-5px;
+  background:#cfc;
 }
 ul li:nth-child(5n) a{
   -o-transform:rotate(5deg);
@@ -60,6 +62,7 @@ ul li:nth-child(5n) a{
   -moz-transform:rotate(5deg);
   position:relative;
   top:-10px;
+  background:#ccf;
 }
 
 ul li h2{
