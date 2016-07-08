@@ -3,20 +3,32 @@
       <head>
         <title>Sticky Notes Application</title>
 
-        <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+        
         <link href="style.css"  rel="stylesheet" type="text/css">
 
 
       </head>
               <body>
               
-              <div id="notesOptions">
-                  
-                    <img id="newNote" src="images/newNote.png"/>
-                    &nbsp  &nbsp
-                    <img id="saveNote" src="images/saveNote.png"/>
-              
+              <div id="notesOptions" style="display:flex">
+                        <div id="create">
+                          <img id="newNote" src="images/newNote.png"/>
+                        </div>
+                      
+                      <h1> To-Do Sticky Notes</h1>
+                        <div id="save">
+                          <img id="saveNote" src="images/saveNote.png"/>
+                        </div> 
               </div>
+
+              <div id="instructions" >
+                <h3> 1. Click Add To Add A New Note</h3>
+                <h3> 2. Click Save To Save All The Current Notes</h3>
+                <h3> 3. Click Delete To Delete A Existing Note</h3> 
+                <h4>Note: Do not forget to save after deletion of a note </h4>
+
+              </div>
+                    
                     <ul id="notes">
                       
                     </ul>
@@ -24,7 +36,7 @@
                    
                     <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
                     <script type="text/javascript" src="scripts/json2.js"></script>
-                     <script src="scripts/notesscript.js"></script>
+                    <script src="scripts/notesscript.js"></script>
 
 
 
