@@ -1,5 +1,5 @@
 * {
-  maring: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -10,11 +10,40 @@
 body {  
   font-size: 100%;
   margin: 15px;
-  background: white;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
   color: #fff;
 }
 
 
+#notesOptions {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#inst {
+  margin-bottom: 10px;
+}
+
+#inst1 {
+    color: red;
+
+}
+#appTitle {
+  margin-left: auto;
+  margin-right: auto;
+  color: #008ae6;
+  font-family : Cinzel;
+
+}
+
+#instructions {
+  text-align: center;
+  font-family: Montserrat;
+  color: black;
+  margin-bottom: 50px;
+}
 
 
 #notesOptions img:hover, #notesOptions img:focus {
@@ -26,30 +55,6 @@ body {
 
 }
 
-#save {
-  position: relative;
-  left: 1330px;
-  
-}
-
-h1 {
-  color: blue;
-  position: relative;
-  left: 640px;
-  text-align: center;
-}
-
-h3 {
-  color: black;
-  position: relative;
-  left: 750px
-}
-
-h4 {
-  color: red;
-  position: relative;
-  left: 750px
-}
 
 ul, li {
   list-style: none;
@@ -70,7 +75,7 @@ ul li div {
   text-decoration: none;
   color: #000;
   background: white;
-  display: block;
+  display:block;
   height: 180px;
   width: 180px;
   padding: 10px;

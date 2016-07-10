@@ -25,7 +25,7 @@
            localStorage.setItem("notes", jsonString);
   
            // Alert the user regarding the saved status
-           alert("Notes saved");
+           alert("Success! All Your Notes Are Saved.");
 
           });
 
@@ -66,7 +66,7 @@
   
        // Adding newly created note to the end of the list.
       notes.append("<li><div class='" + className + "'>" + 
-          "<textarea class='noteTitle' placeholder='Title' maxlength='10'/>" + 
+          "<textarea class='noteTitle' placeholder='Title' maxlength='15'/>" + 
           "<textarea class='noteDescription' placeholder='Description'/>" + 
           "<img class='hide' src='images/deleteNote.png'/>" + 
           "</div></li>");
